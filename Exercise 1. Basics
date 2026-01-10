@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
-function clearDemo() {
-    document.getElementById("demo").innerHTML = "";
-}
-
-</script>
+    <title>Lesson</title>
+    <script src="MyJS.js"></script>
 </head>
-
 <body>
 
 <h1>My Web Page</h1>
