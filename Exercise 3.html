@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 - GitHub</title>
+
+
+    <link id="estilo" rel="stylesheet" href="css/estilo1.css">
+
+    <script>
+        function cambiarImagen(id, ruta) {
+            document.getElementById(id).src = ruta;
+        }
+
+        function cambiarEstilo(ruta) {
+            document.getElementById("estilo").href = ruta;
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>Ejercicio 3 – Select e imágenes (GitHub)</h1>
+
+
+<button onclick="cambiarEstilo('css/estilo1.css')">Estilo 1</button>
+<button onclick="cambiarEstilo('css/estilo2.css')">Estilo 2</button>
+
+<hr>
+
+
+<section class="bloque">
+    <h2>Coches</h2>
+
+    <img id="imgCoche" src="img/coches/coche1.jpg" height="250" alt="Coche">
+
+    <br><br>
+
+    <select onchange="cambiarImagen('imgCoche', this.value)">
+        <option value="img/coches/coche1.jpg">Coche 1</option>
+        <option value="img/coches/coche2.jpg">Coche 2</option>
+        <option value="img/coches/coche3.jpg">Coche 3</option>
+    </select>
+</section>
+
+<hr>
+
+
+<section class="bloque">
+    <h2>Spiderman</h2>
+
+    <img id="imgSpider" src="img/spiderman/spiderman1.jpg" height="250" alt="Spiderman">
+
+    <br><br>
+
+    <select onchange="cambiarImagen('imgSpider', this.value)">
+        <option value="img/spiderman/spiderman1.jpg">Spiderman 1</option>
+        <option value="img/spiderman/spiderman2.jpg">Spiderman 2</option>
+        <option value="img/spiderman/spiderman3.jpg">Spiderman 3</option>
+    </select>
+</section>
+
+</body>
+</html>
+
