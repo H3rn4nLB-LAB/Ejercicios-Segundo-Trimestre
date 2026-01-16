@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4 - Working with Variables</title>
+</head>
+<body>
+
+    <h2>Exercise 4: Working with Variables</h2>
+
+  
+    <p>Enter your name:</p>
+    <input type="text" id="nameInput">
+    <button onclick="showName()">Show Name</button>
+    <p id="nameResult"></p>
+
+    <hr>
+
+
+    <p>Enter a number:</p>
+    <input type="number" id="numberInput">
+    <button onclick="showNumber()">Show Number</button>
+    <p id="numberResult"></p>
+
+    <hr>
+
+ 
+    <p>Enter two numbers to add:</p>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="addNumbers()">Add</button>
+    <p id="sumResult"></p>
+
+    <script>
+     
+        function showName() {
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("nameResult").innerHTML = "Your name is: " + name;
+        }
+
+       
+        function showNumber() {
+            var number = document.getElementById("numberInput").value;
+            document.getElementById("numberResult").innerHTML = "The number is: " + number;
+        }
+
+ 
+        function addNumbers() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            var sum = a + b;
+            document.getElementById("sumResult").innerHTML = "The sum is: " + sum;
+        }
+    </script>
+
+</body>
+</html>
