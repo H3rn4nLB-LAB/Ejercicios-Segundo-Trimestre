@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5 - Basics</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .group {
+            margin-bottom: 30px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        img {
+            width: 200px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        #messageBox {
+            border: 1px solid #333;
+            padding: 10px;
+            margin-top: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 5: Basics (External JS)</h1>
+
+    
+    <div class="group">
+        <h2>A. Change Paragraph Font Style</h2>
+        <p id="text">This is a sample paragraph.</p>
+
+        <button id="btnSerif">Serif</button>
+        <button id="btnSans">Sans-serif</button>
+        <button id="btnMono">Monospace</button>
+    </div>
+
+   
+    <div class="group">
+        <h2>B. Change Image</h2>
+
+        <button id="imgRed">Red Image</button>
+        <button id="imgGreen">Green Image</button>
+        <button id="imgBlue">Blue Image</button>
+
+        <img id="myImage" src="https://via.placeholder.com/200" alt="Sample Image">
+    </div>
+
+   
+    <div class="group">
+        <h2>C. Show Messages</h2>
+
+        <button id="msg1">Message 1</button>
+        <button id="msg2">Message 2</button>
+        <button id="msg3">Message 3</button>
+
+        <div id="messageBox"></div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
