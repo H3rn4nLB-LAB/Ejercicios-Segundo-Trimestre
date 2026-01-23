@@ -1,50 +1,89 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #1e1e1e;
-    font-family: Arial, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.calculator {
-    background: #2c2c2c;
-    padding: 20px;
-    border-radius: 10px;
-    width: 260px;
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); 
 }
 
-#display {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    text-align: right;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+
+.calculator{
+  flex: 0 0 95%;
+  max-width: 400px;
+  background: #f0f0f3;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 50px;
-    gap: 10px;
+
+.screen{
+  width: 100%;
+  font-size: 5rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  text-align: right;
+  box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
 }
 
-button {
-    height: 50px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.5s linear;
 }
 
-button:hover {
-    background: #444;
-    color: white;
+
+button{
+  flex: 0 0 25%;
+  border: none;
+  padding: 1.2rem 0;
+  font-size: 2.5rem;
+  margin: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.zero {
-    grid-column: span 2;
+
+button:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+.btn-yellow{
+  background: #FFC857;
+  color: #fff;
+}
+
+.btn-grey{
+  background: #d9d9d9;
+  color: #333;
+}
+
+.btn-equal{
+  background: #4CAF50;
+  color: white;
+}
+
+.btn-clear{
+  background: #FF6B6B;
+  color: white;
+}
+
+
+.btn, .btn-equal, .btn-clear{
+  font-size: 2.5rem;
+  font-weight: bold;
 }
