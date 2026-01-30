@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - Changing Styles</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+    <div id="controls">
+        <h3>Style Controls</h3>
+
+        <label>Font Size</label>
+        <input type="range" min="10" max="50" value="20"
+               onchange="changeFontSize(this.value)">
+
+        <label>Text Color</label>
+        <input type="color" onchange="changeTextColor(this.value)">
+
+        <label>Background Color</label>
+        <input type="color" onchange="changeBackgroundColor(this.value)">
+    </div>
+
+
+    <div id="content">
+        <h2>Editable Area</h2>
+        <p>
+            This is the area where styles will change.
+            Try adjusting the controls on the left!
+        </p>
+    </div>
+
+    <script src="Java2.js"></script>
+</body>
+</html>
