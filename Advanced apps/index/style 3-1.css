@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#container {
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+#header {
+    background-color: orange;
+    padding: 10px;
+}
+#menu {
+    background-color: gold;
+    float: left;
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+}
+#content {
+    background-color: #eee;
+    margin-left: 110px;
+    height: 150px;
+    padding: 5px;
+}
+#footer {
+    background-color: orange;
+    text-align: center;
+    clear: both;
+    padding: 5px;
+}
