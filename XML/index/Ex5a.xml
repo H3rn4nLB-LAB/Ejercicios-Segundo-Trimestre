@@ -1,4 +1,4 @@
-<?xml version = "1.0" enconding = "UTF-8"?>
+<?xml version="1.0" enconding="UTF-8"?>
 
 <CDList>
   <CD>
@@ -27,6 +27,7 @@
              <Number>4</Number>
              <Name> Macho Man </Name>
              <Duration>5:12</Duration>
+           </Track>
         </Tracks>
     </CD>
 </CDList>
