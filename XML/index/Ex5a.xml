@@ -1,0 +1,32 @@
+<?xml version = "1.0" enconding = "UTF-8"?>
+
+<CDList>
+  <CD>
+    <Title>The Best of Village People</Title>
+    <Artist>Village People</Artist>
+    <Year>1994</Year>
+    <Category>Disco</Category>
+    <Publisher>Casablanca Records</Publisher>
+    <Tracks>
+            <Track>
+                <Number>1</Number>
+                <Name>YMCA</Name>
+                <Duration>4:47</Duration>
+            </Track>
+            <Track>
+                <Number>2</Number>
+                <Name>In the Navy</Name>
+                <Duration>5:40</Duration>
+            </Track>
+            <Track>
+                <Number>3</Number>
+                <Name>Go West</Name>
+                <Duration>4:09</Duration>
+            </Track>
+           <Track>
+             <Number>4</Number>
+             <Name> Macho Man </Name>
+             <Duration>5:12</Duration>
+        </Tracks>
+    </CD>
+</CDList>
