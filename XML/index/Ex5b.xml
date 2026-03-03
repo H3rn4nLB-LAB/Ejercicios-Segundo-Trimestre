@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CDList>
+  <CD serial = "VP1994A1" disc-length="19:48">
+     <!-- This CD has more tracks than in this file -->
+    
+    <Title>The Best of Village People</Title>
+    <Artist>Village People</Artist>
+    <Year>1994</Year>
+    <Category>Disco</Category>
+    <Publisher>Casablanca Records</Publisher>
+
+    
+    <Tracks>
+       <Track number="1" duration="4:47">
+           <Name>YMCA</Name>
+       </Track>
+            
+       <Track number="2" duration="5:40">
+           <Name>In the Navy</Name>
+        </Track>
+            
+        <Track number="3" duration="4:09">
+           <Name>Go West</Name>
+        </Track>
+           
+         <Track number="4" duration="5:12">
+            <Name>Macho Man</Name>
+         </Track>
+    </Tracks>
+  </CD>
+</CDList>
