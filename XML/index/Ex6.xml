@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<letter>
+    <sender>
+        <name>Juan Pérez</name>
+        <address>
+            <street>Calle Mayor 15</street>
+            <city>Madrid</city>
+            <postalCode>28001</postalCode>
+            <country>España</country>
+        </address>
+        <email>juan.perez@email.com</email>
+    </sender>
+
+    <receiver>
+        <name>María López</name>
+        <address>
+            <street>Avenida del Sol 24</street>
+            <city>Barcelona</city>
+            <postalCode>08001</postalCode>
+            <country>España</country>
+        </address>
+        <email>maria.lopez@email.com</email>
+    </receiver>
+
+    <date>2026-03-03</date>
+
+    <subject>Reunión de trabajo</subject>
+
+    <body>
+        Estimada María,
+        
+        Te escribo para confirmar nuestra reunión el próximo viernes a las 10:00.
+        Por favor, avísame si necesitas cambiar la hora.
+        
+        Un cordial saludo.
+    </body>
+
+    <signature>
+        Juan Pérez
+    </signature>
+</letter>
