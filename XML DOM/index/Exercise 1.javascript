@@ -3,23 +3,23 @@ xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var xmlDoc = this.responseXML;
 
-console.log(xmlDoc.document.getElementsByTagName("title")[0].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("year")[0].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("price")[1].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("price")[1].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[0].getElementsByTagName('author')[0].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("book")[0].getElementsByTagName('author')[0].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[2].getElementsByTagName("author")[0].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("book")[2].getElementsByTagName("author")[0].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[2].getElementsByTagName("author")[1].childNodes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("book")[2].getElementsByTagName("author")[1].childNodes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[0].attributes[0].nodeName);
+console.log(xmlDoc.getElementsByTagName("book")[0].attributes[0].nodeName);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[0].attributes[0].nodeValue);
+console.log(xmlDoc.getElementsByTagName("book")[0].attributes[0].nodeValue);
 
-console.log(xmlDoc.document.getElementsByTagName("book")[2].getElementsByTagName("author").length);
+console.log(xmlDoc.getElementsByTagName("book")[2].getElementsByTagName("author").length);
 
 let l = xmlDoc.getElementsByTagName("book")[2].getElementsByTagName('author').length;
 let a = xmlDoc.getElementsByTagName("book")[2].getElementsByTagName('author');
