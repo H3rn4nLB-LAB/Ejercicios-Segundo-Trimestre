@@ -27,14 +27,14 @@ let a = xmlDoc.getElementsByTagName("book")[2].getElementsByTagName('author');
         console.log(a[i].childNodes[0].nodeValue);
     };
 
-let autores = document.getElementsByTagName("book")[2].getElementsByTagName('author');
+let autores = xmlDoc.getElementsByTagName("book")[2].getElementsByTagName('author');
 for (let i = 0; i < autores.length; i++) {
     console.log(autores[i].childNodes[0].nodeValue);
 }
 
-document.getElementsByTagName("book")[3].attributes.length;
+xmlDoc.getElementsByTagName("book")[3].attributes.length;
 
-let attrs = document.getElementsByTagName("book")[3].attributes;
+let attrs = xmlDoc.getElementsByTagName("book")[3].attributes;
 for (let i = 0; i < attrs.length; i++) {
     console.log(attrs[i].nodeValue);
 }
