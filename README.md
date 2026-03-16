@@ -5,4 +5,4 @@ Ejercicios que haré durante el segundo trimestre
 
 | Ejercicio | Descripción |
 |-----------|-------------|
-|[Ejercicio 1] (./Ejercicios-Segundo-Trimestre/blob/main/index/Exercise1.html)| 
+|[Ejercicio 1] (./index/Exercise1.html)| 
