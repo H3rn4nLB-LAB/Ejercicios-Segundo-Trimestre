@@ -1,7 +1,9 @@
 # Ejercicios-Segundo-Trimestre
 Ejercicios que haré durante el segundo trimestre
 
-## TEMA 3 JAVASCRIPT.
+## TEMA 3 JAVASCRIPT y HTML DOM.
+
+## JAVASCRIPT
 
 | Ejercicio | Descripción |
 |-----------|-------------|
@@ -15,3 +17,10 @@ Ejercicios que haré durante el segundo trimestre
 |[Ejercicio 8](./index/Exercise8.html)| Ejercicio que crea un deslizador de imágenes |
 |[Ejercicio 9](./index/Exercise9.html)| Ejercicio que muestra un convertidor de grados celsius en fahrenheit |
 |[Ejercicio 10](./index/Exercise10.html)| Ejercicio donde se crean varias funciones (encontrar el número máximo, traducir a un idioma...) |
+
+## HTML DOM
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Ejercicio 1](./DOM/index/Exercise1.html)| Ejercicio básico para acceder al DOM de una página web mediante javascript y mostrar el contenido de los párrafos en un div |
+
