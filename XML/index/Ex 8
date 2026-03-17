@@ -1,0 +1,150 @@
+Los siguientes documentos no están bien formados porque cada uno contiene dos errores (dos errores del mismo tipo cuentan como uno sólo). 
+Corrija los errores y compruebe con XML Copy Editor que ya son documentos bien formados. 
+Si para corregir algún error hay que inventarse una etiqueta o atributo, utilice un nombre que tenga relación con la información contenida en el documento.
+
+
+Ejercicio 1 - Deportistas
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte Atletismo />
+    <nombre>Jesse Owens</nombre>
+  <deportista>
+    <deporte Natación />
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>
+
+ERRORES: 1. En las etiquetas <deporte> los atributos están sueltos.
+         2. La primera etiqueta </deportista> no está cerrada.
+
+Ejercicio corregido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte> Atletismo </deporte>
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+    <deporte> Natación </deporte>
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>
+
+
+
+
+Ejercicio 2 - Películas
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula>
+  <titulo>Con faldas y a lo loco</titulo>
+  <director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+  <director>Leo McCarey</director>
+  <titulo>Sopa de ganso</titulo>
+</pelicula>
+<autor />barto</autor>
+
+ERRORES: 1. No hay etiqueta raíz.
+         2. La primera etiqueta <autor> no está bien escrita, ya que tiene una etiqueta de cierre al final.
+
+Ejercicio corregido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <titulo>Con faldas y a lo loco</titulo>
+  <director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+  <director>Leo McCarey</director>
+  <titulo>Sopa de ganso</titulo>
+</peliculas>
+<autor>barto</autor>
+</peliculas>
+
+
+
+
+
+Ejercicio 3 - Texto
+<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <Titulo>XML explicado a los niños</titulo>
+  <párrafo>El <abreviatura>XML</abreviatura>define cómo crear
+  lenguajes de marcas.</párrafo>
+  <párrafo>Las marcas se añaden a un documento de texto
+  para añadir información.</párrafo>
+  <http://>www.example.org</http://>
+</texto>
+
+ERRORES: 1. Las etiquetas <titulo> no coinciden.
+         2. Hay caracteres en las etiquetas http, que no están permitidos.
+
+Ejercicio corregido:  
+
+<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <titulo>XML explicado a los niños</titulo>
+  <párrafo>El <abreviatura>XML</abreviatura>define cómo crear
+  lenguajes de marcas.</párrafo>
+  <párrafo>Las marcas se añaden a un documento de texto
+  para añadir información.</párrafo>
+  <http>www.example.org</http>
+</texto>
+
+
+
+
+Ejercicio 4 - Información geográfica
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia mundial>
+  <pais>
+    <pais>España</pais>
+    <continente>Europa</continente>
+    <capital></capital nombre="Madrid">
+  </pais>
+</geografia mundial>
+
+ERRORES:  1. Las etiquetas <geografia mundial> no pueden tener espacios.
+          2. La etiqueta de cierre </capital> tiene atributos, lo cual no está permitido.
+
+Ejercicio corregido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia_mundial>
+  <pais>
+    <pais>España</pais>
+    <continente>Europa</continente>
+    <capital>Madrid</capital>
+  </pais>
+</geografia_mundial>
+
+
+
+
+Ejercicio 5 - Programas
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+  <programa nombre="Firefox" licencia="GPL" licencia="MPL" />
+  <programa nombre="LibreOffice" licencia="LGPL" />
+  <programa nombre="Inkscape" licencia=GPL />
+</programas>
+
+ERRORES:  1. Se está repitiendo el atributo licencia en la línea de Firefox.
+          2. El valor del atributo de Inkscape no tiene comillas.
+
+Ejercicio corregido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+  <programa nombre="Firefox" licencia="GPL MPL" />
+  <programa nombre="LibreOffice" licencia="LGPL" />
+  <programa nombre="Inkscape" licencia= "GPL" />
+</programas>
+
+
+
+
+
+
