@@ -146,5 +146,45 @@ Ejercicio corregido:
 
 
 
+Ejercicio 6 - Mundiales de fútbol
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+  <mundial>
+    <pais="España" />
+    <1982 />
+  </mundial>
+</mundiales-de-futbol>
+
+ERRORES: 1. La etiqueta país no está bien escrita. 
+         2. La etiqueta del año necesita nombre.
+
+Ejercicio corregido:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+  <mundial>
+    <pais nombre="España" />
+    <año  valor ="1982" />
+  </mundial>
+</mundiales-de-futbol>
+
+
+Ejercicio 7 -  Medios de transporte
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+  <bicicleta velocidad="v<100km/h" />
+  <patinete velocidad maxima="50 km/h"
+</mediosDeTransporte>
+
+ERRORES: 1. En la etiqueta bicicleta velocidad se está usando el carácter equivocado (<).
+         2. El atributo velocidad maxima tiene espacio cuando no debería tener.
+
+Ejercicio corregido: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+  <bicicleta velocidad="v&lt;100km/h" />
+  <patinete velocidad-maxima="50 km/h"
+</mediosDeTransporte>
 
 
