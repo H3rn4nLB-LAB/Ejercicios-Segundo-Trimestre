@@ -35,7 +35,7 @@ console.log(xmlDoc.getElementsByTagName("book")[3].attributes.length);
 
 let attrs = xmlDoc.getElementsByTagName("book")[3].attributes;
     for(let i = 0; i < attrs.length; i++){
-       console.log(attrs[i].nodeValue)
+       console.log(attrs[i].nodeValue);
       }
    }
 };
