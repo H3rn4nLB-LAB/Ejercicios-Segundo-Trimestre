@@ -1,7 +1,7 @@
 # Ejercicios-Segundo-Trimestre
 Ejercicios que haré durante el segundo trimestre
 
-## TEMA 3 JAVASCRIPT y HTML DOM.
+## TEMA 3: JAVASCRIPT y HTML DOM.
 
 ## JAVASCRIPT
 
@@ -24,3 +24,18 @@ Ejercicios que haré durante el segundo trimestre
 |-----------|-------------|
 |[Ejercicio 1](./DOM/index/Exercise1.html)| Ejercicio básico para acceder al DOM de una página web mediante javascript y mostrar el contenido de los párrafos en un div |
 
+## TEMA 4: XML, XML DOM, AJAX
+
+## XML
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Ejercicio 1](./XML/index/Ex1)| Preguntas de teoría de XML |
+|[Ejercicio 2](./XML/index/Ex2.xml)| Ejercicio para comprobar que un archivo xml se puede ver en un navegador como Chrome|
+|[Ejercicio 3](./XML/index/ex3-err.txt)| Ejercicio que muestra los errores de un código xml y cómo corregirlos |
+|[Ejercicio 4](./XML/index/Ex4.xml)| Ejercicio para convertir un mensaje de correo en un código xml |
+|[Ejercicio 5a](./XML/index/Ex5a.xml)| Ejercicio para crear un código XML con información de discos |
+|[Ejercicio 5b](./XML/index/Ex5b.xml)| Segunda versión del ejercicio, en la que se añaden más atributos |
+|[Ejercicio 6](./XML/index/Ex6.xml)| Ejercicio que muestra un correo en formato xml |
+|[Ejercicio 7](./XML/index/Ex7)| Más preguntas de teoría de XML |
+|[Ejercicio 8](./XML/index/Ex8)| Ejercicio donde se corrigen documentos xml mal formados |
