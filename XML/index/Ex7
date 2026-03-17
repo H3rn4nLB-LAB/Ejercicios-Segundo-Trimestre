@@ -1,0 +1,24 @@
+7-The XML standard
+How XML should look is described in the XML 1.0 W3C Recommendation. The language of the standard is somewhat technical and formal, but being able to read the standard yourself is quite useful. Look into the standard and answer the following questions:
+
+    1. What do comments look like in XML? (section 2.5)
+
+<!--This is a comment--> 
+
+    2. Can an attribute be repeated in the same element? (section 3.1)
+
+No. Is not valid.  <persona nombre="Juan" nombre="Pedro"> 
+
+    3. Where is it stated that the element names in opening and closing tags must match?
+
+
+The name in the opening tag must exactly match the name in the closing tag.
+
+XML is case-sensitive (distinguishes between uppercase and lowercase letters).
+
+
+
+
+“<Person></person>”
+
+This is invalid because the names do not match exactly.
