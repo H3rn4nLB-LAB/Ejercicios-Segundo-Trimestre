@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<h2>Información Meteorológica AEMET de Huelva Capital</h2>
+
+<button type="button" onclick="loadDocWeather()">Mostrar la información</button>
+<br><br>
+<table id="weather"></table>
+
+<script>
+function loadDocWeather() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    showWeather(this);
+  }
+  xhttp.open("GET", "http://www.aemet.es/xml/municipios/localidad_21041.xml");
+  xhttp.send();
+}
+
+function showWeather(xml){
+   const xmlDoc = xml.responseXML;
+   const prediccion = xmlDoc.getElementsByTagName("prediccion")[0];
+  
+   const dia = xmlDoc.getElementsByTagName("dia")[0];
+
+   const tempMax = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("maxima")[0].childNodes[0].nodeValue;
+   const tempMin = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("minima")[0].childNodes[0].nodeValue;
+
+ 
+}
+
+</script>
+
+  
+</body>
+
+</html>
+
+
+
+  
