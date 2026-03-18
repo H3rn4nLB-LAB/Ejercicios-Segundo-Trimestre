@@ -45,6 +45,7 @@ Ejercicios que haré durante el segundo trimestre
 | Ejercicio | Descripción |
 |-----------|-------------|
 |[Fichero books](./XML_DOM/index/books.xml)| Fichero de libros para hacer los ejercicios 1 y 3 |
+|[Fichero CDs](./XML_DOM/index/catalog.xml)| Fichero de CDs para hacer el ejercicio 2 |
 |[Ejercicio 1](./XML_DOM/index/Exercise1.javascript)| Códigos para mostrar los resultados en la consola del navegador |
 |[Ejercicio 2-1](.XML_DOM/index/Exercise2-1.html)| Código para mostrar por consola el título de los CDs del fichero xml |
 |[Ejercicio 2-2](.XML_DOM/index/Exercise2-2.html)| Código para mostrar por consola el precio de los CDs del fichero xml |
