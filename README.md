@@ -51,3 +51,13 @@ Ejercicios que haré durante el segundo trimestre
 |[Ejercicio 2-2](.XML_DOM/index/Exercise2-2.html)| Código para mostrar por consola el precio de los CDs del fichero xml |
 |[Ejercicio 2-3](.XML_DOM/index/Exercise2-3.html)| Código para mostrar por consola la compañía a la que pertencen los CDs del fichero xml |
 [Ejercicio 3](./XML_DOM/index/Exercise3.javascript)| Código para mostrar otros resultados (entre ellos una tabla) en la consola del navegador |
+
+
+## AJAX
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Fichero CDs](./AJAX/index/catalog.xml)| Fichero de CDs para hacer el ejercicio 1 |
+|[Fichero tiempo en Huelva](./AJAX/index/localidad_21041.xml)| Fichero de CDs para hacer el ejercicio 2 |
+|[Ejercicio 1](./AJAX/index/Exercise.html)| Ejercicio para hacer una tabla que muestre información de los discos |
+|[Ejercicio 2](./AJAX/index/Exercise.html)| Ejercicio para hacer una tabla que muestre información del tiempo en Huelva capital|
