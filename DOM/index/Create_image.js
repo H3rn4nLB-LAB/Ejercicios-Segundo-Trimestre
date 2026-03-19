@@ -1,12 +1,12 @@
-function agregarImagen() {
+document.getElementById("btnAgregar").addEventListener("click", crearImagen);
 
-  var img = document.createElement("img");
+function crearImagen() {
 
-  img.src = "https://picz.dev/landscape";   
+  let img = document.createElement("img");
+
+  img.src = "https://picsum.photos/200";   
   img.alt = "Imagen generada por JavaScript";
-  img.style.width = "100%"; 
+  img.width = 200; 
 
-  var contenedor = document.getElementById("contenedorImagen");
-
-  contenedor.appendChild(img);
+ document.getElementById("contendor").appendChild(img);
 }
