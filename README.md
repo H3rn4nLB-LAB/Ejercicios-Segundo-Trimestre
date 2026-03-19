@@ -23,6 +23,8 @@ Ejercicios que haré durante el segundo trimestre
 | Ejercicio | Descripción |
 |-----------|-------------|
 |[Ejercicio 1](./DOM/index/Exercise1.html)| Ejercicio básico para acceder al DOM de una página web mediante javascript y mostrar el contenido de los párrafos en un div |
+|[Ejercicio 2](./DOM/index/Exercise2.html)| Ejercicio para hacer un simulador de un formulario |
+
 
 ## TEMA 4: XML, XML DOM, AJAX
 
