@@ -1,7 +1,11 @@
+document.getElementById("enviar").addEventListener("click", mostrarMensaje);
+
 function mostrarMensaje(){
 
-   let nombre = document.getElementById("nombre").value;
-   let apellidos = document.getElementById("apellidos").value;
+   let formulario = document.forms["Formulario"];
+   
+   let nombre = formulario("nombre").value;
+   let apellidos = formulario("apellidos").value;
 
   document.getElementById("resultado").innerHTML =
          "Hola "+ nombre + " "+ apellidos + ", gracias por completar el formulario. ";
