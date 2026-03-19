@@ -24,6 +24,14 @@ Ejercicios que haré durante el segundo trimestre
 |-----------|-------------|
 |[Ejercicio 1](./DOM/index/Exercise1.html)| Ejercicio básico para acceder al DOM de una página web mediante javascript y mostrar el contenido de los párrafos en un div |
 |[Ejercicio 2](./DOM/index/Exercise2.html)| Ejercicio para hacer un simulador de un formulario |
+|[Ejercicio 3](./DOM/index/Exercise3.html)| Ejercicio para agregar imágenes a un div |
+|[Ejercicio 4](./DOM/index/Exercise4.html)| Ejercicio para eliminar elementos de una lista |
+|[Ejercicio 5](./DOM/index/Exercise5.js)| Comandos para mostrar en una página web el título, las imágenes y los links |
+|[Ejercicio 6](./DOM/index/Exercise6.html)| Ejercicio para practicar onLoad |
+|[Ejercicio 7](./DOM/index/Exercise7.html)| Ejercicio para practicar onClick |
+|[Ejercicio 8](./DOM/index/Exercise8.html)| Ejercicio para practicar setTimeout |
+|[Ejercicio 9](./DOM/index/Exercise9.html)| Ejercicio para practicar setTimeout y clearTimeout |
+|[Ejercicio 10](./DOM/index/Exercise10.html)| Ejercicio que recrea el juego de apagar todas las luces |
 
 
 ## TEMA 4: XML, XML DOM, AJAX
