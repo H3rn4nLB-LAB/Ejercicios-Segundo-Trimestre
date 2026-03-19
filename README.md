@@ -39,7 +39,7 @@ Ejercicios que haré durante el segundo trimestre
 |-----------|-------------|
 |[Ejercicio 1](./Advanced_apps/index/Exercise1.html)| Ejercicio para crear una página web para comprobar códigos html |
 |[Ejercicio 2](./Advanced_apps/index/Exercise2.html)| Ejercicio para cambiar el estilo de los elementos de una página web |
-|[Ejercicio 1](./Advanced_apps/index/Exercise1.html)| Ejercicio para cambiar el estilo de una página web entera |
+|[Ejercicio 3](./Advanced_apps/index/Exercise3.html)| Ejercicio para cambiar el estilo de una página web entera |
 |[Ejercicio 4](./Advanced_apps/index/Exercise4.html)| Ejercicio para mostrar una tabla de multiplicar de un número al introducirlo en un campo |
 
 ## TEMA 4: XML, XML DOM, AJAX
