@@ -1,9 +1,4 @@
-<html>
-  <body>
-    <h2>Listado de títulos de CD</h2>
-    <p id="titulos"></p>
 
-    <script>
       const xhttp = new XMLHttpRequest();
       xhttp.onload = function(){
         const xmlDoc = this.responseXML;
@@ -18,6 +13,3 @@
       xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
       xhttp.send();
           
-    </script>
-  </body>
-</html>
