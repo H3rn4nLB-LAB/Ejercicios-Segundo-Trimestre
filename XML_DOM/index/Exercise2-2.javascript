@@ -1,10 +1,5 @@
-<html>
-  <body>
-    <h2>Listado de precios de CD</h2>
-    <p id="precios"></p>
 
-    <script>
-      const xhttp = new XMLHttpRequest();
+     const xhttp = new XMLHttpRequest();
       xhttp.onload = function(){
         const xmlDoc = this.responseXML;
         const cds = xmlDoc.getElementsbyTagName("CD");
@@ -18,6 +13,4 @@
       xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
       xhttp.send();
           
-    </script>
-  </body>
-</html>
+
