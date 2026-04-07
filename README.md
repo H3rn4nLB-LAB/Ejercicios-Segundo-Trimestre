@@ -1,5 +1,5 @@
-# Ejercicios-Segundo-Trimestre
-Ejercicios que haré durante el segundo trimestre
+# Ejercicios-Segundo-y-Tercer-Trimestre
+Ejercicios que haré durante el segundo trimestre y el tercero.
 
 Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.github.io/Ejercicios-Segundo-Trimestre/)
 
