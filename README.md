@@ -82,6 +82,14 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 1](./AJAX/index/Exercise1.html)| Ejercicio para hacer una tabla que muestre información de los discos |
 |[Ejercicio 2](./AJAX/index/Exercise2.html)| Ejercicio para hacer una tabla que muestre información del tiempo en Huelva capital|
 
+## JSON 
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Ejercicio 1](./JSON/index/Exercise1.html)| Ejercicio para practica básica de crear objetos javascript. |
+|[Ejercicio 2](./JSON/index/Exercise2.html)| Ejercicio para practica básica de crear objetos javascript con arrays. |
+
+
 ## TRABAJO
 
 | Ejercicio | Descripción |
