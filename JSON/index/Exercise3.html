@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Ejercicio 3: ejercicios con un array y una tabla. </h2>
+<p id="length"></p>
+<div id = "table"></div>
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+  
+}
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
+
+</script>
+  
+</body>
+
+  
+</html>
