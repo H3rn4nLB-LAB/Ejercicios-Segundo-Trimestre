@@ -78,7 +78,7 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 | Ejercicio | Descripción |
 |-----------|-------------|
 |[Fichero CDs](./AJAX/index/catalog.xml)| Fichero de CDs para hacer el ejercicio 1 |
-|[Fichero tiempo en Huelva](./AJAX/index/localidad_21041.xml)| Fichero de CDs para hacer el ejercicio 2 |
+|[Fichero tiempo en Huelva](./AJAX/index/localidad_21041.xml)| Fichero de tiempo atmosférico para hacer el ejercicio 2 |
 |[Ejercicio 1](./AJAX/index/Exercise1.html)| Ejercicio para hacer una tabla que muestre información de los discos |
 |[Ejercicio 2](./AJAX/index/Exercise2.html)| Ejercicio para hacer una tabla que muestre información del tiempo en Huelva capital|
 
