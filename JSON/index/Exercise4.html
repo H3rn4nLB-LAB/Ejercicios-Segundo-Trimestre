@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Exercise 4</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<div id="demo7"></div> 
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML =  myObj.name;
+
+  document.getElementById("demo1").innerHTML = "Edad:" + myObj.age;
+
+  document.getElementById("demo2").innerHTML = "Tipo de animal (primera mascota): " + myObj.pets[0].animal;
+
+  document.getElementById("demo3").innerHTML = "Nombre (primera mascota): " + myObj.pets[0].name;
+
+  document.getElementById("demo4").innerHTML = "Número de mascotas: " + myObj.pets.length;
+
+  let nombres = "";
+  for (let i = 0; i < myObj.pets.length; i++)
+  {
+    nombres += myObj.pets[i].name + "<br>";
+  }
+  document.getElementById("demo5").innerHTML = "Nombres de mascotas: " + nombres;
+
+  let parrafo = "Nombre: " + myObj.name + ". Edad: " + myObj.age + ". ";
+   parrafo += "Mascotas: ";
+  for (let i = 0; i < myObj.pets.length; i++){
+
+    parrafo += myObj.pets[i].name + " (" + myObj.pets[i].animal + ")";
+        if (i < myObj.pets,length - 1) parrafo += ", ";
+  }
+  
+ document.getElementById("demo6").innerHTML = parrafo
+  
+}
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
+</script>
+
+</body>
+</html>
