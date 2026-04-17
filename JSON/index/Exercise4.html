@@ -42,6 +42,13 @@ xmlhttp.onload = function() {
   }
   
  document.getElementById("demo6").innerHTML = parrafo
+
+let tabla = "<table border='1'><tr><th>Nombre Mascota</th><th>Tipo</th></tr>";
+  for(let i = 0; i<myObj.pets.length;i++){
+    tabla+= "<tr><td>" + myObj.pets[i].name + "</td><td>" + myObj.pets[i].type + "</td></tr>";
+  }
+  tabla += "</table>";
+  document.getElementById("demo7").innerHTML = tabla;
   
 }
 xmlhttp.open("GET", "json_demo.txt");
