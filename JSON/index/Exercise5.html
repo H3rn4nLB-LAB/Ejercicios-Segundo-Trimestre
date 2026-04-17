@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>NASA APOD Data</h1>
+
+<button type ="button" onclick= "loadNasaData()">Cargar Informacion </button>
+
+  <div id = "info">
+
+<p><strong>Fecha:</strong> <span id="fecha"></span></p>
+  <p><strong>Explicación:</strong> <span id="explicacion"></span></p>
+  <p><strong>URL:</strong> <span id="url"></span></p>
+</div>
+
+
+<img id="nasa-img" src="" alt="NASA Image" style="max-width:500px; display:block; margin-top:20px;">
+
+<script>
+function myAjaxRequest(url, callback) {
+    var ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function()  {
+        if (this.readyState == 4 && this.status == 200)
+            callback(this);
+    };
+    ajax.open("GET", url, true);
+    ajax.send();
+}
+
+function loadNasaData() {
+    var url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2020-05-01";
+    myAjaxRequest(url, onNasaLoaded);
+}
+
+function onNasaLoaded(ajax) {
+    // Transformamos el texto de respuesta en un objeto JSON
+    var data = JSON.parse(ajax.responseText);
+
+    // 1. Muestra el valor de "explanation"
+    document.getElementById("explicacion").innerHTML = data.explanation;
+
+    // 2. Muestra el valor de "date"
+    document.getElementById("fecha").innerHTML = data.date;
+
+    // 3. Muestra el valor de "url"
+    document.getElementById("url").innerHTML = data.url;
+
+    // 4. Muestra la imagen en el elemento <img>
+    document.getElementById("nasa-img").src = data.url;
+}
+</script>
+
+</body>
+</html>
+  
