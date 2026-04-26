@@ -44,7 +44,7 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 3](./Advanced_apps/index/Exercise3.html)| Ejercicio para cambiar el estilo de una página web entera |
 |[Ejercicio 4](./Advanced_apps/index/Exercise4.html)| Ejercicio para mostrar una tabla de multiplicar de un número al introducirlo en un campo |
 
-## TEMA 4: XML, XML DOM, AJAX
+## TEMA 4: XML, XML DOM, AJAX, JSON
 
 ## XML
 
@@ -94,9 +94,15 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 4](./JSON/index/Exercise4.html)| Ejercicio para mostrar los datos de un documento json |
 |[Ejercicio 5](./JSON/index/Exercise5.html)| Ejercicio para mostrar datos de la NASA |
 
-## TRABAJO
+## TRABAJO SEGUNDO TRIMESTRE
 
 | Ejercicio | Descripción |
 |-----------|-------------|
 |[Proyecto Bootstrap](https://h3rn4nlb-lab.github.io/ProyectoBootstrap/)| Trabajo de clase en el que se crea una página web mediante Bootstrap |
 |[Repositorio Bootstrap](https://github.com/H3rn4nLB-LAB/ProyectoBootstrap)| Acceso al repositorio donde hice el trabajo con Bootstrap |
+
+
+## TEMA 5: XML DTD, XML XPath, XML RSS
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Ejercicio 1](./XML_DTD/index/Correct(1).txt)| Ejercicio para corregir errores en los elementos de los XML |
