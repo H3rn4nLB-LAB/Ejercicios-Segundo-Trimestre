@@ -208,6 +208,33 @@ DTD - Ejercicio 1-7 - Músicos
     <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
   </musico>
 </musicos>
+
+ERROR: el elemento <musico> no puede tener los dos elementos <nombre> y <apodo> al mismo tiempo.
+
+Corregido: eliminar uno de los elementos o poner entre paréntesis el elemento eliminado en el elemento que no se ha eliminado.
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musicos [
+  <!ELEMENT musicos (musico*)>
+  <!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apodo (#PCDATA)>
+  <!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+
+<musicos>
+  <musico>
+    <nombre>Antonio Vivaldi (El cura pelirrojillo)</nombre>
+    <fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+  </musico>
+  <musico>
+    <apodo>El viejo peluca (Johann Sebastian Bach)</apodo>
+    <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+  </musico>
+</musicos>
+
+
 DTD - Ejercicio 1-8 - Teléfonos de emergencia
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE agenda [
@@ -230,6 +257,39 @@ DTD - Ejercicio 1-8 - Teléfonos de emergencia
     <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
   </contacto>
 </agenda>
+
+
+ERROR: el segundo elemento <contacto> tiene los elementos <telefenoFijo> y <telefonoMovil> desordenados 
+       y el primer elemento <contacto> debe tener un elemento <telefonoMovil>
+
+Corregido: reordenar los elementos <telefenoFijo> y <telefonoMovil> en el segundo <contacto>
+           y añadir un elemento <telefonoMovil> en el primer <contacto>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda [
+  <!ELEMENT agenda (contacto*)>
+  <!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT telefonoFijo (#PCDATA)>
+  <!ELEMENT telefonoMovil (#PCDATA)>
+]>
+
+<agenda>
+  <contacto>
+    <nombre>Ayuntamiento</nombre>
+    <telefonoFijo>010</telefonoFijo>
+    <telefonoMovil></telefonoMovil>
+  </contacto>
+  <contacto>
+    <nombre>Emergencias</nombre>
+    <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+    <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
+    <telefonoMovil>Desconocido</telefonoMovil>
+  </contacto>
+</agenda>
+
+
 DTD - Ejercicio 1-9 - El sistema solar
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sistemaSolar [
@@ -247,3 +307,31 @@ DTD - Ejercicio 1-9 - El sistema solar
   </cuerpo>
   <asteroide>Ceres</asteroide>
 </sistemaSolar>
+
+
+ERROR: el elemento <sistemaSolar> solo puede tener elementos <cuerpo>, no elementos <asteroide>
+       y el elemento <cuerpo> solo puede tener un elemento (planeta, satelite o asteroide>
+
+Corregido: crear elementos <cuerpo> para los elementos <planeta>, <satelite> y <asteroide>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistemaSolar [
+  <!ELEMENT sistemaSolar (cuerpo*)>
+  <!ELEMENT cuerpo (planeta|satelite|asteroide)>
+  <!ELEMENT planeta (#PCDATA)>
+  <!ELEMENT satelite (#PCDATA)>
+  <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+  <cuerpo>
+    <planeta>Tierra</planeta>
+  </cuerpo>
+  <cuerpo>
+  <satelite>Luna</satelite>
+  </cuerpo>
+  <cuerpo>
+  <asteroide>Ceres</asteroide>
+  </cuerpo>
+</sistemaSolar>
+
