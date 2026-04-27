@@ -251,3 +251,227 @@ Corregido: reorganizar los elementos <rey> y <reina> como dice la DTD y definir 
 </reyesEspañoles>
 
 
+DTD - Ejercicio 2-6 - Países
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+  <!ELEMENT pais (nombre, unionEuropea, otan)>
+  <!ELEMENT nombre EMPTY>
+  <!ELEMENT unionEuropea EMPTY>
+  <!ELEMENT otan EMPTY>
+]>
+
+<paises>
+  <pais>
+    <nombre>España</nombre>
+    <unionEuropea />
+    <otan />
+  </pais>
+  <pais>
+    <nombre>Noruega</nombre>
+    <otan />
+  </pais>
+  <pais>
+    <nombre>Austria</nombre>
+    <unionEuropea />
+  </pais>
+</paises>
+
+
+ERRORES: el elemento raíz <paises> no está definido en la DTD, el elemento <pais> debe contener los elementos <nombre>, <unionEuropea> y <otan>, pero en el documento los elementos <unionEuropea> y <otan> a veces no aparece
+         y el elemento <nombre> es vacío pero en el documento contienen texto.
+
+Corregido: definir en la DTD el elemento raiz <paises>, decir que los elementos <unionEuropea> y <otan> pueden aparecer o no 
+           y decir que el elemento <nombre> contiene texto.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+  <!ELEMENT pais (nombre, unionEuropea?, otan?)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT unionEuropea EMPTY>
+  <!ELEMENT otan EMPTY>
+]>
+
+<paises>
+  <pais>
+    <nombre>España</nombre>
+    <unionEuropea />
+    <otan />
+  </pais>
+  <pais>
+    <nombre>Noruega</nombre>
+    <otan />
+  </pais>
+  <pais>
+    <nombre>Austria</nombre>
+    <unionEuropea />
+  </pais>
+</paises>
+
+
+DTD - Ejercicio 2-7 - Códigos de colores
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+  <!ELEMENT colores (color*)>
+  <!ELEMENT nombreSvg (#PCDATA)>
+  <!ELEMENT rgb (#PCDATA)>
+  <!ELEMENT cmyk (#PCDATA)>
+]>
+
+<colores>
+  <color>
+    <nombreSvg>Purple</nombreSvg>
+    <codigo>
+      <rgb>#800080</rgb>
+    </codigo>
+  </color>
+  <color>
+    <nombreSvg>Purple</nombreSvg>
+    <codigo>
+      <cmyk>#00FF007F</cmyk>
+    </codigo>
+  </color>
+</colores>
+
+
+ERRORES: los elementos <color> y <codigo> no están definidos en la DTD
+
+Corregido: definir dichos elementos.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+  <!ELEMENT colores (color*)>
+  <!ELEMENT color (nombreSvg, codigo>
+  <!ELEMENT nombreSvg (#PCDATA)>
+  <!ELEMENT codigo (rgb|cmyk)>
+  <!ELEMENT rgb (#PCDATA)>
+  <!ELEMENT cmyk (#PCDATA)>
+]>
+
+<colores>
+  <color>
+    <nombreSvg>Purple</nombreSvg>
+    <codigo>
+      <rgb>#800080</rgb>
+    </codigo>
+  </color>
+  <color>
+    <nombreSvg>Purple</nombreSvg>
+    <codigo>
+      <cmyk>#00FF007F</cmyk>
+    </codigo>
+  </color>
+</colores>
+
+
+DTD - Ejercicio 2-8 - Contabilidad
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contabilidad [
+  <!ELEMENT contabilidad ((ingreso | gasto)*)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT concepto (#PCDATA)>
+]>
+
+<contabilidad>
+  <apunte>
+    <ingreso />
+    <fecha>24 de febrero de 2011</fecha>
+    <cantidad>1800,00 €</cantidad>
+    <concepto>Salario</concepto>
+  </apunte>
+  <apunte>
+    <gasto />
+    <fecha>28 de febrero de 2011</fecha>
+    <cantidad>74,25 €</cantidad>
+    <concepto>Recibo luz</concepto>
+  </apunte>
+</contabilidad>
+
+
+ERROR: los elementos <apunte>, <ingreso> y <gasto> no están definidos en la DTD.
+
+Corregido: definir dichos elementos.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contabilidad [
+  <!ELEMENT contabilidad ((ingreso | gasto)*), fecha, cantidad, concepto)>
+  <!ELEMENT ingreso EMPTY>
+  <!ELEMENT gasto EMPTY>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT concepto (#PCDATA)>
+]>
+
+<contabilidad>
+  <apunte>
+    <ingreso />
+    <fecha>24 de febrero de 2011</fecha>
+    <cantidad>1800,00 €</cantidad>
+    <concepto>Salario</concepto>
+  </apunte>
+  <apunte>
+    <gasto />
+    <fecha>28 de febrero de 2011</fecha>
+    <cantidad>74,25 €</cantidad>
+    <concepto>Recibo luz</concepto>
+  </apunte>
+</contabilidad>
+
+
+DTD - Ejercicio 2-9 - Mensajes
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+  <!ELEMENT mensajes (mensaje)>
+  <!ELEMENT de (#PCDATA)>
+  <!ELEMENT para (#PCDATA)>
+  <!ELEMENT hora (#PCDATA)>
+  <!ELEMENT texto (#PCDATA)>
+  <!ELEMENT strong (#PCDATA)>
+]>
+
+<mensajes>
+  <mensaje>
+    <de>Pepe (pepe@example.com)</de>
+    <para>Juan (juan@example.com)</para>
+    <hora>28/02/2011 17:48:23,61</hora>
+    <texto>¿Hola, Juan, qué haces?</texto>
+  </mensaje>
+  <mensaje>
+    <de>Juan (juan@example.com)</de>
+    <para>Pepe (pepe@example.com)</para>
+    <hora>28/02/2011 17:54:20,87</hora>
+    <texto>Aquí, aprendiendo <strong>XML</strong></texto>
+  </mensaje>
+</mensajes>
+
+ERROR: el elemento <mensaje> no está definido, según la DTD el elemento raíz <mensajes> sólo contiene un elemento <mensaje>
+       pero en el documento contiene varios, y el elemento <texto> sólo contiene texto, pero en el documento contiene también la etiqueta <strong>.
+
+Corregido: definir el elemento <mensaje> y decir que puede repetirse y decir que el elemento <texto> puede contener cualquier cosa.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+  <!ELEMENT mensajes (mensaje*)>
+  <!ELEMENT mensaje (de, para, hora, texto)>
+  <!ELEMENT de (#PCDATA)>
+  <!ELEMENT para (#PCDATA)>
+  <!ELEMENT hora (#PCDATA)>
+  <!ELEMENT texto ANY>
+  <!ELEMENT strong (#PCDATA)>
+]>
+
+<mensajes>
+  <mensaje>
+    <de>Pepe (pepe@example.com)</de>
+    <para>Juan (juan@example.com)</para>
+    <hora>28/02/2011 17:48:23,61</hora>
+    <texto>¿Hola, Juan, qué haces?</texto>
+  </mensaje>
+  <mensaje>
+    <de>Juan (juan@example.com)</de>
+    <para>Pepe (pepe@example.com)</para>
+    <hora>28/02/2011 17:54:20,87</hora>
+    <texto>Aquí, aprendiendo <strong>XML</strong></texto>
+  </mensaje>
+</mensajes>
+         
