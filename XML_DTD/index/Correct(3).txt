@@ -174,3 +174,29 @@ DTD - Ejercicio 3-6 - Jugadores y equipos de fútbol
   <equipo nombre="Società Sportiva Calcio Napoli" jugadores="Maradona" />
   <equipo nombre="Futbol Club Barcelona" jugadores="Cruyff, Maradona" />
 </futbol>
+
+
+ERROR: el atributo "jugadores", al ser de tipo IDREFS, debe contener valores que coincidan con valores de atributos de tipo ID, 
+       y las palabras se separan por espacios en vez de comas.
+
+Corregido: cambiar los valores de los atributos por "dam" y "jc" y borrar la coma del atributo "jugadores".
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+  <!ELEMENT futbol ((jugador|equipo)*)>
+  <!ELEMENT jugador EMPTY>
+  <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+  <!ATTLIST jugador codigo ID #REQUIRED>
+  <!ELEMENT equipo EMPTY>
+  <!ATTLIST equipo nombre CDATA #REQUIRED>
+  <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+
+<futbol>
+  <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+  <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+  <jugador nombre="Diego Armando Maradona" codigo="dam" />
+  <jugador nombre="Johan Cruyff" codigo="jc" />
+  <equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam" />
+  <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" />
+</futbol>
