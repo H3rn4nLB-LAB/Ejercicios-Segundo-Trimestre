@@ -113,3 +113,16 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 3](./XML_DTD/index/Correct(3).txt)| Ejercicio para corregir errores en los atributos de los XML |
 
 
+
+
+
+
+## TRABAJO TERCER TRIMESTRE
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[Proyecto XML](https://h3rn4nlb-lab.github.io/ProyectoXML/)| Trabajo de clase en el que se crea una página web de un concurso de preguntas mediante XML y AJAX|
+|[Repositorio XML](https://github.com/H3rn4nLB-LAB/ProyectoXML)| Acceso al repositorio donde hice el trabajo con XML y AJAX|
+
+
+
