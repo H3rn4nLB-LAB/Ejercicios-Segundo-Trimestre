@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeFutbol [
+  <!ELEMENT ligaDeFutbol (partido*)>
+  <!ELEMENT partido EMPTY>
+  <!ATTLIST partido localNombre CDATA #REQUIRED>
+  <!ATTLIST partido localGoles CDATA #REQUIRED>
+  <!ATTLIST partido visitanteNombre CDATA #REQUIRED>
+  <!ATTLIST partido visitanteGoles CDATA #REQUIRED>
+]>
+
+<ligaDeFutbol>
+  <partido localNombre="Nottingham Presa" localGoles="0" visitanteNombre="Inter de Mitente" visitanteGoles="1" />
+  <partido localNombre="Vodka Juniors" localGoles="3"  visitanteNombre="Sparta da Risa" visitanteGoles="3" />
+  <partido localNombre="Water de Múnich" localGoles="4" visitanteNombre="Esteaua es del grifo" visitanteGoles="2" />
+</ligaDeFutbol>
