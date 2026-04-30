@@ -112,9 +112,9 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 2](./XML_DTD/index/Correct(2).txt)| Ejercicio para corregir errores en la DTD de los XML |
 |[Ejercicio 3](./XML_DTD/index/Correct(3).txt)| Ejercicio para corregir errores en los atributos de los XML |
 |[Ejercicio 4](./XML_DTD/index/Correct(4).txt)| Ejercicio para corregir errores en los atributos y en la DTD de los XML |
-|[Ejercicio5-1](.XML_DTD/index/Exercise5-1.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD no haya atributos, sino únicamente etiquetas. |
-|[Ejercicio5-2](.XML_DTD/index/Exercise5-2.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD los goles son atributos. |
-|[Ejercicio5-3](.XML_DTD/index/Exercise5-3.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD toda la información se guarde en forma de atributos|
+|[Ejercicio5-1](./XML_DTD/index/Exercise5-1.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD no haya atributos, sino únicamente etiquetas. |
+|[Ejercicio5-2](./XML_DTD/index/Exercise5-2.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD los goles son atributos. |
+|[Ejercicio5-3](./XML_DTD/index/Exercise5-3.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD toda la información se guarde en forma de atributos|
 
 
 
