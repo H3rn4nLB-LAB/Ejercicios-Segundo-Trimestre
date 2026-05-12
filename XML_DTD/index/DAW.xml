@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE daw SYSTEM "DAW.dtd">
+<daw> 
+  <modulo>
+    <nombre>Lenguajes de marcas y sistemas de gestion de informacion</nombre>
+    <descripcion>Estudio de HTML, CSS, XML, etc.</descripcion>
+    <codigo>LMSGI</codigo>
+    <profesor>José Ignacio</profesor>
+    <fechas>
+      <inicio>
+        <dia>15</dia>
+        <mes>09</mes>
+        <ano>2025</ano>
+      </inicio>
+      <fin>
+        <dia>22</dia>
+        <mes>06</mes>
+        <ano>2026</ano>
+      </fin>
+    </fechas>
+  </modulo>
+
+  <modulo>
+    <nombre>Desarrollo web en entorno cliente</nombre>
+    <descripcion>Programación con Javascript.</descripcion>
+    <codigo>DWEC</codigo>
+    <profesor>María García</profesor>
+    <fechas>
+      <inicio>
+        <dia>15</dia>
+        <mes>09</mes>
+        <ano>2025</ano>
+      </inicio>
+      <fin>
+        <dia>22</dia>
+        <mes>06</mes>
+        <ano>2026</ano>
+      </fin>
+    </fechas>
+  </modulo>
+</daw>
