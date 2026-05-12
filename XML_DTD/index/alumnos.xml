@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lista_alumnos SYSTEM "alumnos.dtd">
+
+<lista_alumnos>
+  <alumno num_alumno="01" sexo="chico" altura="185">
+    <nombre>Juan</nombre>
+    <apellidos>Pérez García</apellidos>
+    <domicilio>Calle Mayor 5, Madrid</domicilio>
+    <telefono tipo="propio">600111222</telefono>
+    <telefono tipo="madre">600333444</telefono>
+    <equipo>Baloncesto</equipo>
+    <aficion>Lectura</aficion>
+    <aficion>Ajedrez</aficion>
+    <origen>
+      <provincia>Madrid</provincia>
+    </origen>
+    <notas>
+        <evaluacion>Primera</evaluacion>
+        <calificacion>8</calificacion>
+        <evaluacion>Segunda</evaluacion>
+        <calificacion>7</calificacion>
+    </notas>
+    <comentarios>Alumno muy participativo con el grupo</comentarios>
+  </alumno>
+
+    <alumno num_alumno="02" sexo="chica" ayudado_por="01">
+    <nombre>Elena</nombre>
+    <apellidos>Sánchez Ruiz</apellidos>
+    <domicilio>Avda. Constitución 10, Sevilla</domicilio>
+    <telefono tipo="propio">600555333</telefono>
+    <telefono tipo="padre">699888777</telefono>
+    <aficion>Pintura</aficion>
+    <origen>
+      <pais>Francia</pais>
+    </origen>
+    <notas>
+        <evaluacion>Primera</evaluacion>
+        <calificacion>9</calificacion>
+    </notas>
+    <comentarios>
+      Requiere material de apoyo de <nombre>Juan</nombre>
+    </comentarios>
+  </alumno>
+<lista_alumnos>
