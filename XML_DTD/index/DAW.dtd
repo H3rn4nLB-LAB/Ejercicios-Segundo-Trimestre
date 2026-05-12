@@ -1,0 +1,11 @@
+<!ELEMENT daw (modulo+)>
+<!ELEMENT modulo (nombre, descripcion, codigo, profesor, fechas)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
+<!ELEMENT fechas (inicio, fin)>
+<!ELEMENT fin (dia, mes, ano)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
