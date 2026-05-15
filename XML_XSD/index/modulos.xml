@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulos xmlns:xsi="http://w3.org"
+         xsi:noNamespaceSchemaLocation="modulos.xsd">
+    <modulo>
+        <nombre>Desarrollo Web en Entorno Cliente</nombre>
+        <descripcion>Programación con JavaScript, manipulación del DOM y frameworks modernos.</descripcion>
+        <codigo>0612</codigo>
+        <profesor>María Gómez Ruiz</profesor>
+        <fechas>
+            <inicio>
+                <dia>15</dia>
+                <mes>09</mes>
+                <ano>2025</ano>
+            </inicio>
+            <fin>
+                <dia>22</dia>
+                <mes>12</mes>
+                <ano>2025</ano>
+            </fin>
+        </fechas>
+    </modulo>
+    <modulo>
+        <nombre>Desarrollo Web en Entorno Servidor</nombre>
+        <descripcion>Configuración de servidores, bases de datos y lenguajes de backend.</descripcion>
+        <codigo>0613</codigo>
+        <profesor>Carlos Marin López</profesor>
+        <fechas>
+            <inicio>
+                <dia>08</dia>
+                <mes>01</mes>
+                <ano>2026</ano>
+            </inicio>
+            <fin>
+                <dia>04</dia>
+                <mes>06</mes>
+                <ano>2026</ano>
+            </fin>
+        </fechas>
+    </modulo>
+</modulos>
