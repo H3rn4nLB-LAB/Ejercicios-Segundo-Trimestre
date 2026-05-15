@@ -118,9 +118,9 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[DAW.dtd](./XML_DTD/index/DAW.dtd)| DTD para el xml que almacena datos de los módulos del CFGS |
 |[DAW.xml](./XML_DTD/index/DAW.xml)| Documento xml que almacena datos de los módulos del CFGS |
 |[alumnos.dtd](./XML_DTD/index/alumnos.dtd)| DTD para el xml que almacena datos de los alumnos |
-|[DAW.xml](./XML_DTD/index/alumnos.xml)| Documento xml que almacena datos de los alumnos|
-|[DAW.dtd](./XML_DTD/index/pedidos.dtd)| DTD para el xml que almacena datos de pedidos de clientes |
-|[DAW.xml](./XML_DTD/index/pedidos.xml)| Documento xml que almacena datos de pedidos de clientes |
+|[alumnos.xml](./XML_DTD/index/alumnos.xml)| Documento xml que almacena datos de los alumnos|
+|[pedidos.dtd](./XML_DTD/index/pedidos.dtd)| DTD para el xml que almacena datos de pedidos de clientes |
+|[pedidos.xml](./XML_DTD/index/pedidos.xml)| Documento xml que almacena datos de pedidos de clientes |
 
 
 ## TRABAJO TERCER TRIMESTRE
