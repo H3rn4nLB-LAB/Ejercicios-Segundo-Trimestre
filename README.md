@@ -114,9 +114,13 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[Ejercicio 4](./XML_DTD/index/Correct(4).txt)| Ejercicio para corregir errores en los atributos y en la DTD de los XML |
 |[Ejercicio5-1](./XML_DTD/index/Exercise5-1.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD no haya atributos, sino únicamente etiquetas. |
 |[Ejercicio5-2](./XML_DTD/index/Exercise5-2.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD los goles son atributos. |
-|[Ejercicio5-3](./XML_DTD/index/Exercise5-3.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD toda la información se guarde en forma de atributos|
-
-
+|[Ejercicio5-3](./XML_DTD/index/Exercise5-3.xml)| Ejercicio para crear un XML que guarde los resultados de una liga de fútbol y en cuya DTD toda la información se guarde en forma de atributos |
+|[DAW.dtd](./XML_DTD/index/DAW.dtd)| DTD para el xml que almacena datos de los módulos del CFGS |
+|[DAW.xml](./XML_DTD/index/DAW.xml)| Documento xml que almacena datos de los módulos del CFGS |
+|[alumnos.dtd](./XML_DTD/index/alumnos.dtd)| DTD para el xml que almacena datos de los alumnos |
+|[DAW.xml](./XML_DTD/index/alumnos.xml)| Documento xml que almacena datos de los alumnos|
+|[DAW.dtd](./XML_DTD/index/pedidos.dtd)| DTD para el xml que almacena datos de pedidos de clientes |
+|[DAW.xml](./XML_DTD/index/pedidos.xml)| Documento xml que almacena datos de pedidos de clientes |
 
 
 ## TRABAJO TERCER TRIMESTRE
