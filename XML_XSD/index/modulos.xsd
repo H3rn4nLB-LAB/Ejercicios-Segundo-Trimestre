@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://w3.org">
+
+  <xs:element name="modulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="modulo" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="descripcion" type="xs:string"/>
+              <xs:element name="codigo" type="xs:string"/>
+              <xs:element name="profesor" type="xs:string"/>
+              <xs:element name="fechas" type="tipoFechas"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tipoFechas">
+    <xs:sequence>
+      <xs:element name="inicio" type="tipoDetalleFecha"/>
+      <xs:element name="fin" type="tipoDetalleFecha"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoDetalleFecha">
+    <xs:sequence>
+      <xs:element name="dia" type="tipoDia"/>
+      <xs:element name="mes" type="tipoMes"/>
+      <xs:element name="ano" type="tipoAno"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="tipoDia">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="31"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoMes">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoAno">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="2000"/>
+      <xs:maxInclusive value="2100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
