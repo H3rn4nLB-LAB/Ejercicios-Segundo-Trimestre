@@ -126,8 +126,8 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 
 | Ejercicio | Descripción |
 |-----------|-------------|
-|[modulos.xsd](./XML_XSD/index/modelos.xsd)| Esquema para el documento xml que almacena información de los módulos de DAW |
-|[modulos.xml](./XML_XSD/index/modelos.xml)| Documento xml que almacena información de los módulos de DAW |
+|[modulos.xsd](./XML_XSD/index/modulos.xsd)| Esquema para el documento xml que almacena información de los módulos de DAW |
+|[modulos.xml](./XML_XSD/index/modulos.xml)| Documento xml que almacena información de los módulos de DAW |
 |[biblioteca.xsd](./XML_XSD/index/biblioteca.xsd)| Esquema para el documento xml que almacena información de los libros de una biblioteca |
 |[biblioteca.xml](./XML_XSD/index/biblioteca.xml)| Documento xml que almacena información de los libros de una biblioteca |
 |[tabla-periodica.xsd](./XML_XSD/index/tabla-periodica.xsd)| Esquema para el documento xml que almacena información de los elementos de la tabla periódica |
