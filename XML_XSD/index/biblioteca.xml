@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://w3.org"
+            xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <libro id="L001">
+        <titulo>Don Quijote de la Mancha</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <paginas>1032</paginas>
+        <disponible>true</disponible>
+    </libro>
+    <libro id="L002">
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <paginas>471</paginas>
+        <disponible>false</disponible>
+    </libro>
+</biblioteca>
