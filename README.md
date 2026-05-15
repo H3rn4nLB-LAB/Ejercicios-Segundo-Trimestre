@@ -122,6 +122,17 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[pedidos.dtd](./XML_DTD/index/pedidos.dtd)| DTD para el xml que almacena datos de pedidos de clientes |
 |[pedidos.xml](./XML_DTD/index/pedidos.xml)| Documento xml que almacena datos de pedidos de clientes |
 
+## XML XSD
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[modulos.xsd](./XML_XSD/index/modelos.xsd)| Esquema para el documento xml que almacena información de los módulos de DAW |
+|[modulos.xml](./XML_XSD/index/modelos.xml)| Documento xml que almacena información de los módulos de DAW |
+|[biblioteca.xsd](./XML_XSD/index/biblioteca.xsd)| Esquema para el documento xml que almacena información de los libros de una biblioteca |
+|[biblioteca.xml](./XML_XSD/index/biblioteca.xml)| Documento xml que almacena información de los libros de una biblioteca |
+|[tabla-periodica.xsd](./XML_XSD/index/tabla-periodica.xsd)| Esquema para el documento xml que almacena información de los elementos de la tabla periódica |
+|[tabla-periodica.xml](./XML_XSD/index/tabla-periodica.xml)| Documento xml que almacena información de los elementos de la tabla periódica |
+
 
 ## TRABAJO TERCER TRIMESTRE
 
