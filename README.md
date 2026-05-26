@@ -133,6 +133,16 @@ Para ir a la web para ver los ejercicios haz click [aquí](https://h3rn4nlb-lab.
 |[tabla-periodica.xsd](./XML_XSD/index/tabla-periodica.xsd)| Esquema para el documento xml que almacena información de los elementos de la tabla periódica |
 |[tabla-periodica.xml](./XML_XSD/index/tabla-periodica.xml)| Documento xml que almacena información de los elementos de la tabla periódica |
 
+## XML XPATH
+
+| Ejercicio | Descripción |
+|-----------|-------------|
+|[ies.xml](./XML_XPath/index/ies.xml)| Documento xml que almacena información de un instituto y de los ciclos formativos|
+|[xpath_ies.md](./XML_XPath/index/xpath_ies.md)| Expresiones simples que me pide el ejercicio del documento xml anterior |
+|[ies-2.xml](./XML_XPath/index/ies-2.xml)| Documento xml que almacena información de los módulos que se imparten en el instituto del ejercicio anterior |
+|[xpath_ies-2.md](./XML_XPath/index/xpath_ies-2.md)| Expresiones simples que me pide el ejercicio del documento xml anterior |
+|[ies-3.xml](./XML_XPath/index/ies-3.xml)| Documento xml que almacena información del instituto, sus módulos y ciclos |
+|[xpath_ies-3.md](./XML_XPath/index/xpath_ies-3.md)| Expresiones simples que me pide el ejercicio del documento xml anterior |
 
 ## TRABAJO TERCER TRIMESTRE
 
